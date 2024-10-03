@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shareable Dynamic Resume </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  
+    <header><h1>Shareable Dynamic Resume </h1></header>
+    
+    <form id="resumeForm">
+      <h2>Personal Information</h2>
+      <label for="name">Name:</label>
+      <input type="text" name="text" id="name" value="Beena Anum" placeholder="Enter your name" required><br>
+      <label for="email">Email:</label> 
+      <input type="email" name="email" id="email" value="beena123@gmail.com" placeholder="Enter your email" required> <br>
+      <label for="phone">Phone:</label> 
+      <input type="tel" name="number" id="phone" value="03422123456" placeholder="Enter your phone number" required> <br>
+
+      <h2>Education</h2>
+      <label for="degree">Degree:</label>
+      <input type="text" name="text" id="degree" value="BSc" placeholder="Enter your education" required><br>
+       
+      <h2>Work Experience</h2>
+      <label for="experience">Experience:</label>
+      <textarea id="experience" name="text" placeholder="Enter your experience" required></textarea><br>
+    
+      <h2>Skills</h2>
+      <label for="skills">Skills:</label>
+      <textarea id="skills" name="skills" placeholder="Enter your skills" required></textarea><br>
+
+      
+      <button type="submit"><strong>Generate Resume</strong></button> 
+      <button id="downloadPdfButton" type="button"><strong>Download pdf</strong></button>
+      <button id="shareLinkButton" type="button" target="blank-page" type="click"><strong>Share Resume</strong></button>
+      
+    </form>
+    
+    <h1>Your Resume:</h1>
+    <div id="resumeOutput" contenteditable="true"></div>
+
+    <div id="shareLinkOutput">
+    </div>
+    
+   <script src="index.js"></script>
+
+  </body>
+</html

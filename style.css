@@ -1,0 +1,133 @@
+body {  
+    background-color: rgb(247, 223, 191);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+header h1{
+    background-color:rgba(0, 0, 0, 0.774);
+    color:white;
+    padding: 11px;
+    margin: 15px auto;
+    text-align: center;
+    align-items: center;   
+}
+
+h2{
+    background-color:rgba(0, 0, 0, 0.774);
+    color:white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgb(17, 17, 17);
+}
+
+#resumeForm{
+    background-color: rgb(252, 202, 138);
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 11px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.726);
+    text-align: center;
+}
+
+label {
+    font-size: larger;
+    float:inline-start;
+    margin: 15px;
+}
+
+input,textarea{
+    display: block;
+    margin: 15px auto 0 ;
+    width: 90%;
+    max-width: 400px;
+    padding: 6px ;
+    border: 2px solid rgba(0, 0, 0, 0.747);
+    border-radius: 5px;
+}
+
+button{
+    background-color: rgb(247, 223, 191);
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid rgba(0, 0, 0, 0.856);
+    box-shadow: 0 0 10px rgb(17, 17, 17);
+    cursor: pointer;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.884);
+    color: white;
+}
+
+h1{
+    text-align: center;
+}
+
+#resumeOutput {
+    background-color: rgb(252, 202, 138);
+    width: 80%;
+    max-width: 800px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 11px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.726);
+    text-align: center;
+}
+
+#shareLinkOutput{
+background-color: rgb(252, 202, 138);
+width: 80%;
+max-width: 800px;
+font-family: Arial, Helvetica, sans-serif;
+margin: 20px auto;
+padding: 20px;
+border: 2px solid rgb(0, 0, 0);
+border-radius: 11px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.726);
+text-align: center;
+}
+/* we use print media for pdf and also you can add more print-specific styles  */
+@media print {
+    button {
+        display: none;
+    }
+    h1{
+        display: none;
+    }
+    form {
+        display: none;
+    }
+    #shareLinkOutput{
+        display: none;
+    } 
+}
+@media (max-width: 768px) {
+    #resumeForm, #resumeOutput {
+        width: 90%;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 480px) {
+    #resumeForm, #resumeOutput {
+        width: 95%;
+        max-width: 100px;
+    }
+
+    button {
+        padding: 8px; /* Slightly smaller padding */
+    }
+}
